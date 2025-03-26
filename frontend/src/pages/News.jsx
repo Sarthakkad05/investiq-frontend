@@ -9,7 +9,7 @@ const News = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await fetch('http://localhost:8000/finance-news');
+        const response = await fetch('https://invest-deploy-3.onrender.com/finance-news');
         const data = await response.json();
         const filteredNews = data?.news?.filter(article => article.image) || [];
         setNews(filteredNews.slice(0, 6));

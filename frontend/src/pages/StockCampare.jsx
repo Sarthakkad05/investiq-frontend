@@ -7,7 +7,7 @@ import Valuation from "../components/tools/Valuation";
 import Financial from "../components/tools/Financial";
 import Navbar from "../components/home/TopBar";
 
-const API_URL = "http://localhost:8000/compare_stocks";
+const API_URL = "https://invest-deploy-3.onrender.com/compare_stocks";
 
 
 const StockCompare = () => {

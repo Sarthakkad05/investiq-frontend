@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://invest-deploy-3.onrender.com";
 
 export const signup = async (email, password, display_name) => {
   return await axios.post(`${API_URL}/signup`, { email, password, display_name });

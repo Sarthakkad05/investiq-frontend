@@ -7,7 +7,7 @@ import remarkGfm from "remark-gfm";
 import axios from "axios";
 import Navbar from "../components/home/TopBar";
 
-const API_URL = "http://localhost:8000/chat";
+const API_URL = "https://invest-deploy-3.onrender.com/chat";
 
 export default function Chatbot() {
   const [messages, setMessages] = useState([]);

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import Navbar from "../components/home/TopBar";
 
-const API_URL = "http://localhost:8000/stock";
+const API_URL = "https://invest-deploy-3.onrender.com/stock";
 
 export const CompanyDetails = () => {
     const { query } = useParams();

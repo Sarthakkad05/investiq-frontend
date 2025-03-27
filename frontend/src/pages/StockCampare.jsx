@@ -7,7 +7,7 @@ import Valuation from "../components/tools/Valuation";
 import Financial from "../components/tools/Financial";
 import Navbar from "../components/home/TopBar";
 
-const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+const BASE_URL = import.meta.env.BACKEND_URL;
 const API_URL = `${BASE_URL}/compare_stocks`;
 
   const StockCompare = () => {

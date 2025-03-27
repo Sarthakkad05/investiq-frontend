@@ -7,7 +7,7 @@ import remarkGfm from "remark-gfm";
 import axios from "axios";
 import Navbar from "../components/home/TopBar";
 
-const BASE_URL = import.meta.env.BACKEND_URL;
+const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 const API_URL = `${BASE_URL}/chat`;
 
 export default function Chatbot() {

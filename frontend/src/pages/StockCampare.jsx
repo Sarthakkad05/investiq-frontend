@@ -7,10 +7,10 @@ import Valuation from "../components/tools/Valuation";
 import Financial from "../components/tools/Financial";
 import Navbar from "../components/home/TopBar";
 
-const API_URL = "https://invest-deploy-3.onrender.com/compare_stocks";
+const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+const API_URL = `${BASE_URL}/compare_stocks`;
 
-
-const StockCompare = () => {
+  const StockCompare = () => {
   const [stock1, setStock1] = useState("");
   const [stock2, setStock2] = useState("");
   const [userId, setUserId] = useState(null);

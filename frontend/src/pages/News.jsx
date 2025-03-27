@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../components/home/TopBar';
 
+const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+const API_URL = `${BASE_URL}/finance-news`;
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -9,7 +11,7 @@ const News = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await fetch('https://invest-deploy-3.onrender.com/finance-news');
+        const response = await fetch(API_URL);
         const data = await response.json();
         const filteredNews = data?.news?.filter(article => article.image) || [];
         setNews(filteredNews.slice(0, 6));

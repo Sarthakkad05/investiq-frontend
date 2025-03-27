@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import Navbar from "../components/home/TopBar";
 
-const API_URL = "https://invest-deploy-3.onrender.com/stock";
+const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+const API_URL = `${BASE_URL}/stock`;
 
 export const CompanyDetails = () => {
     const { query } = useParams();

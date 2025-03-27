@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+console.log("Backend URL:", BASE_URL); 
 
 export const signup = async (email, password, display_name) => {
   return await axios.post(`${BASE_URL}/signup`, { email, password, display_name });

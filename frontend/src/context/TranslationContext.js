@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from "react";
 import axios from "axios";
 
 // Replace with your actual Google Translate API Key
-const API_KEY = "AIzaSyC-rk7NEswIXwT8bSFvK9P2-a2e8bwFJjU";
+const API_KEY = "AAIzaSyAMKeDT6N_7X3w9jVocSty9WyJYCAhhBtk";
 const TranslationContext = createContext();
 
 export const TranslationProvider = ({ children }) => {

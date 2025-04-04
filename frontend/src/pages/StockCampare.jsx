@@ -23,7 +23,8 @@ const API_URL = `${BASE_URL}/compare_stocks`;
   useEffect(() => {
     const storedUserId = localStorage.getItem("userId");
     if (storedUserId) {
-      setUserId(storedUserId);
+      setUserId(storedUserId); 
+      console.log(storedUserId);
     }
   }, []);
 
@@ -36,7 +37,7 @@ const API_URL = `${BASE_URL}/compare_stocks`;
       });
       setStockData(response.data);
       setShowContent(true);
-      console.log(response.data);
+      console.log(userId);
     } catch (error) {
       console.error("Failed to fetch company data", error);
     }

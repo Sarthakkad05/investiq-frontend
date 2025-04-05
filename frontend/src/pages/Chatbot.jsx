@@ -106,7 +106,7 @@ export default function Chatbot() {
         <input
           type="text"
           className="flex-grow p-3 rounded-full bg-[#121214] border-none outline-none text-gray-500 placeholder-gray-300"
-          placeholder="Type a message..."
+          placeholder="Chat here.."
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && sendMessage()}

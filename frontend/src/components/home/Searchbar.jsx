@@ -19,7 +19,7 @@ const SearchBar = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleChange()}
-                placeholder="Search ..." 
+                placeholder="Start chats here.." 
                 className="flex-grow p-3 rounded-full bg-[#09090b] border-none outline-none text-gray-500 placeholder-gray-300"
             />
             <button 
